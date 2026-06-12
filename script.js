@@ -48,12 +48,45 @@ const projects = {
     tech: "ASP.NET MVC • SQL Server • JavaScript • Bootstrap"
   },
   flynas: {
-    type: "UI/UX Prototype & Workflow Planning",
-    title: "Flynas Digitization Prototype",
-    description:
-      "Designed UI/UX prototypes and workflow plans for digitizing operational forms, improving process visibility, and supporting digital transformation initiatives.",
-    tech: "Figma • UI/UX Design • Workflow Planning"
-  }
+  type: "Digital Transformation Prototype",
+
+  title: "Flynas Load Control Digitization",
+
+  description:
+    "A digital transformation initiative focused on converting operational airline forms and manual processes into a centralized digital platform. The project included workflow analysis, UI/UX design, process optimization, and prototype development to improve efficiency, visibility, and data accuracy.",
+
+  role:
+    "Designed interactive prototypes, analyzed operational workflows, created user journeys, and translated business requirements into digital solutions. Worked closely with stakeholders to visualize future-state processes and improve operational efficiency.",
+
+  features: [
+    "Operational form digitization",
+    "Workflow redesign",
+    "User journey mapping",
+    "Interactive prototypes",
+    "Digital signatures",
+    "Document management concepts",
+    "Process visibility improvements",
+    "Responsive UI design",
+    "Stakeholder-driven requirements gathering",
+    "Digital transformation planning"
+  ],
+
+  tech: [
+    "Figma",
+    "UI/UX Design",
+    "Wireframing",
+    "Prototyping",
+    "User Flow Design",
+    "Process Mapping"
+  ],
+
+  images: [
+    "images/flynas1.png",
+    "images/flynas2.png",
+    "images/flynas3.png",
+    "images/flynas4.png"
+  ]
+}
 };
 
 const modal = document.getElementById("projectModal");
