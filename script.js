@@ -25,69 +25,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const projects = {
-  pr: {
-    type: "Enterprise Workflow System",
-    title: "PR Workflow System",
-    description:
-      "A procurement request workflow system designed to manage request submissions, multi-level approvals, role-based actions, dashboards, request tracking, and automated email notifications.",
-    tech: "ASP.NET MVC • SQL Server • JavaScript • Bootstrap • Azure DevOps"
-  },
-  timekeeper: {
-    type: "Workforce Management System",
-    title: "Timekeeper Portal",
-    description:
-      "An internal attendance and workforce management portal enhanced with Excel import/export, automated workflow processes, email generation, and improved user experience for operational users.",
-    tech: "ASP.NET MVC • SQL Server • JavaScript • Bootstrap • Excel Automation"
-  },
-  fis: {
-    type: "Internal System Enhancement",
-    title: "FIS Enhancement Project",
-    description:
-      "Enhanced destination-related functionalities and improved operational workflow handling within an internal system, with a focus on usability and workflow efficiency.",
-    tech: "ASP.NET MVC • SQL Server • JavaScript • Bootstrap"
-  },
-  flynas: {
-  type: "Digital Transformation Prototype",
-
-  title: "Flynas Load Control Digitization",
-
-  description:
-    "A digital transformation initiative focused on converting operational airline forms and manual processes into a centralized digital platform. The project included workflow analysis, UI/UX design, process optimization, and prototype development to improve efficiency, visibility, and data accuracy.",
-
-  role:
-    "Designed interactive prototypes, analyzed operational workflows, created user journeys, and translated business requirements into digital solutions. Worked closely with stakeholders to visualize future-state processes and improve operational efficiency.",
-
-  features: [
-    "Operational form digitization",
-    "Workflow redesign",
-    "User journey mapping",
-    "Interactive prototypes",
-    "Digital signatures",
-    "Document management concepts",
-    "Process visibility improvements",
-    "Responsive UI design",
-    "Stakeholder-driven requirements gathering",
-    "Digital transformation planning"
-  ],
-
-  tech: [
-    "Figma",
-    "UI/UX Design",
-    "Wireframing",
-    "Prototyping",
-    "User Flow Design",
-    "Process Mapping"
-  ],
-
-  images: [
-    "images/flynas1.png",
-    "images/flynas2.png",
-    "images/flynas3.png",
-    "images/flynas4.png"
-  ]
-}
-};
 
 const modal = document.getElementById("projectModal");
 const closeModal = document.getElementById("closeModal");
@@ -218,26 +155,57 @@ window.addEventListener("scroll", () => {
 });
 
 const galleryData = {
-  qoot: {
-    type: "AI Mobile Application",
-    title: "Qoot – Smart Fridge System",
-    description:
-      "An AI-powered smart fridge system designed to help users manage food inventory, monitor expiry dates, receive alerts, discover recipes, and generate shopping lists to reduce food waste.",
-    role:
-      "Contributed to the mobile application design and development, inventory management flow, recipe and shopping list features, and system integration with Firebase and computer vision components.",
-    features: [
-      "Food inventory tracking",
-      "Expiry date monitoring and alerts",
-      "Recipe suggestions based on available items",
-      "Shopping list generation",
-      "Category-based item organization"
-    ],
-    tech: ["Flutter", "Firebase", "Python", "OpenCV", "Computer Vision"],
+  qout: {
+  type: "AI-Powered Smart Fridge System",
+
+  title: "Qout – Smart Fridge System",
+
+  description:
+    "A graduation project focused on developing an AI-powered smart fridge ecosystem that helps users manage food inventory, track expiration dates, reduce food waste, and receive personalized recipe recommendations. The solution combines a custom Raspberry Pi-based device that attaches to a refrigerator, computer vision, cloud services, and a mobile application to transform a traditional fridge into a smart inventory management system.",
+
+  role:
+    "Contributed to system analysis, database design, mobile application development, Firebase integration, testing, and implementation of the smart inventory management solution. Participated in designing and integrating a Raspberry Pi-based smart device that scans products, tracks inventory, and synchronizes data with the mobile application.",
+
+  features: [
+    "Food inventory management",
+    "Barcode and expiry date scanning",
+    "Expiration date tracking and notifications",
+    "Recipe recommendations based on available ingredients",
+    "Shopping list generation",
+    "Product categorization",
+    "Cloud data synchronization",
+    "Mobile application integration",
+    "Computer vision-based item detection",
+    "Raspberry Pi-based smart fridge attachment"
+  ],
+
+  impact: [
+    "Helped reduce food waste through expiration tracking.",
+    "Improved visibility of stored food items.",
+    "Automated inventory management processes.",
+    "Provided personalized recipe suggestions.",
+    "Connected hardware, cloud services, and mobile app into one solution."
+  ],
+
+  tech: [
+    "Python",
+    "Flutter",
+    "Firebase",
+    "OpenCV",
+    "Computer Vision",
+    "IoT",
+    "Raspberry Pi 4",
+    "Camera Module",
+    "Touch Display"
+  ],
     images: [
       "images/app.png",
       "images/app1.png",
       "images/app2.png",
-      "images/app3.png"
+      "images/app3.png",
+      "images/app4.png"
+
+
     ]
   },
 
@@ -255,25 +223,49 @@ const galleryData = {
       "View restaurants",
       "Manage reservation details"
     ],
-    tech: ["Java", "OOP", "MVC", "Scrum", "Software Engineering"],
+    tech: ["Java", "OOP", "Scrum", "Software Engineering"],
     images: ["images/saudi.png"]
   },
 
   helpconnect: {
-    type: "UI/UX Prototype",
-    title: "HelpConnect – Support Application",
-    description:
-      "A customer support platform prototype that helps businesses communicate with customers through live chat and support ticket management.",
-    role:
-      "Worked on requirements gathering, user flows, low and high fidelity prototypes, dashboard screens, live chat interfaces, and usability testing.",
-    features: [
-      "Live chat",
-      "Support ticket management",
-      "Dashboard analytics",
-      "Personal information page",
-      "User-friendly support interface"
-    ],
-    tech: ["Figma", "Adobe XD", "UI/UX Design", "Usability Testing"],
+  type: "UI/UX Design & Customer Support Platform",
+
+  title: "HelpConnect",
+
+  description:
+    "A customer support platform designed to help businesses communicate with their customers through support tickets and live chat services. The project focused on improving customer engagement by providing an accessible, user-friendly, and cost-effective communication solution for businesses.",
+
+  role:
+    "Participated in requirements gathering, user research, system analysis, use case modeling, UI/UX design, low-fidelity and high-fidelity prototyping, and usability testing. Contributed to designing both business owner and customer experiences while validating the solution through user testing and feedback.",
+
+  features: [
+    "Customer support ticket management",
+    "Live chat functionality",
+    "Business owner dashboard",
+    "User account management",
+    "Ticket tracking and status monitoring",
+    "Package and subscription management",
+    "Customizable customer support interface",
+    "Customer-business communication platform"
+  ],
+
+  impact: [
+    "Improved customer-business communication.",
+    "Provided an affordable support solution for businesses.",
+    "Enhanced customer engagement and accessibility.",
+    "Validated usability through user testing sessions.",
+    "Designed user-centered workflows based on research findings."
+  ],
+
+  tech: [
+    "Figma",
+    "Adobe XD",
+    "UI/UX Design",
+    "Wireframing",
+    "Prototyping",
+    "Use Case Analysis",
+    "Usability Testing"
+  ],
     images: [
       "images/helpconnect.png",
       "images/helpconnect1.png",
@@ -283,66 +275,90 @@ const galleryData = {
   },
 
     timekeeper: {
-    type: "Enterprise Attendance System",
-    title: "Timekeeper Portal",
-   description:
-"An internal workforce management portal developed to simplify attendance tracking, shift management, and workforce operations. The portal digitizes attendance processes, improves operational visibility, and reduces manual effort through automated workflows and Excel integration.",
+  type: "Attendance Digitization System",
 
+  title: "Timekeeper Portal",
+
+  description:
+    "An internal web application developed to replace manual Excel-based attendance processes with a structured digital workflow. The system enables attendance submission, Excel uploads, automated file generation, email delivery, and integration with an existing automation bot for processing attendance records.",
 role:
-"Enhanced system functionality, improved user experience, implemented attendance management features, supported Excel import/export processes, and optimized operational workflows for business users.",
+  "Contributed to the development of an internal attendance digitization system by implementing attendance workflows, Excel processing functionality, Microsoft Graph email integration, database operations, validation logic, and user interface enhancements. Supported testing, troubleshooting, and continuous system improvements throughout the development lifecycle.",
+  features: [
+    "Digital attendance form submission",
+    "Excel upload and validation",
+    "Automated Excel file generation",
+    "Microsoft Graph email integration",
+    "Attendance record management",
+    "Database logging and tracking",
+    "Azure AD authentication",
+    "Role-based access control",
+    "Automation bot integration",
+    "Responsive multi-step user interface"
+  ],
 
-features: [
-  "Daily attendance submission",
-  "Employee attendance records",
-  "Shift information management",
-  "Excel import and export",
-  "Automated validation processes",
-  "Operational reporting",
-  "Improved user experience",
-  "Role-based access management"
-],
+  impact: [
+    "Replaced manual Excel-based attendance processes.",
+    "Reduced repetitive manual data handling.",
+    "Improved attendance data accuracy.",
+    "Automated file generation and delivery.",
+    "Integrated attendance processing with existing automation workflows."
+  ],
 
-tech: [
-  "ASP.NET MVC",
-  "SQL Server",
-  "JavaScript",
-  "Bootstrap",
-  "Excel Integration"
-],
-    images: [
-      "images/timekeeper1.jpeg",
-      "images/timekeeper2.jpeg",
-      "images/timekeeper3.jpeg",
-      "images/timekeeper4.jpeg"
-    ]
-  },
+  tech: [
+    "ASP.NET Core MVC",
+    "SQL Server",
+    "Entity Framework Core",
+    "ClosedXML",
+    "Microsoft Graph API",
+    "Azure AD",
+    "Bootstrap",
+    "JavaScript"
+  ],
+
+  images: [
+    "images/timekeeper1.jpeg",
+    "images/timekeeper2.jpeg",
+    "images/timekeeper3.jpeg",
+    "images/timekeeper4.jpeg"
+  ]
+},
 
   fis: {
-    type: "Internal Flight Information System",
-    title: "FIS Enhancement Project",
-   description:
-"Designed UI/UX prototypes and workflow concepts for digitizing airline operational forms and manual processes. The project aimed to improve process visibility, reduce paperwork, and support future digital transformation initiatives.",
+type: "Enterprise System Enhancement",
+
+title: "Flight Information System (FIS)",
+
+description:
+"Contributed to enhancing the Flight Information System (FIS) by improving existing user interfaces, optimizing user experience, and modernizing operational screens. The enhancements focused on creating a cleaner, more intuitive, and efficient experience for users while supporting ongoing system improvement initiatives.",
 
 role:
-"Created wireframes, user flows, interactive prototypes, and workflow diagrams while collaborating with stakeholders to understand operational requirements and translate them into digital solutions.",
+"Worked on redesigning and improving existing FIS interfaces, enhancing usability, refining screen layouts, improving navigation flow, and supporting system enhancement activities based on operational requirements and user feedback.",
 
 features: [
-  "Interactive UI/UX prototypes",
-  "Workflow analysis",
-  "Digital form design",
-  "Process mapping",
-  "User journey design",
-  "Responsive layouts",
-  "Stakeholder-driven design approach",
-  "Operational process digitization"
+"User interface enhancement",
+"Screen redesign and modernization",
+"Improved user experience and usability",
+"Layout optimization",
+"Navigation flow improvements",
+"Operational screen enhancements",
+"User-focused design improvements"
+],
+
+impact: [
+"Improved overall user experience.",
+"Enhanced system usability and accessibility.",
+"Provided a cleaner and more intuitive interface.",
+"Reduced complexity in operational screens.",
+"Supported ongoing digital transformation initiatives."
 ],
 
 tech: [
-  "Figma",
-  "UI/UX Design",
-  "Wireframing",
-  "Prototyping",
-  "Workflow Planning"
+"ASP.NET MVC",
+"HTML",
+"CSS",
+"JavaScript",
+"Bootstrap",
+"SQL Server"
 ],
     images: [
       "images/fis1.jpeg",
@@ -362,26 +378,42 @@ tech: [
       "images/fis15.jpeg"
     ]
   },
-  pr: {
-  type: "Enterprise Workflow System",
-  title: "PR Workflow System",
- description:
-"An enterprise Procurement Request (PR) management system developed to digitize and streamline the procurement process through a structured multi-level approval workflow. The system enables request creation, automated approval routing, role-based actions, request tracking, dashboard visibility, and workflow management across multiple departments.",
+ pr: {
+  type: "Enterprise Procurement System",
+  title: "Purchase Request Portal (PR Portal)",
+ description: `
+Developed an enterprise Purchase Request management system that transformed a manual email-based procurement process into a centralized digital workflow.
 
-role:
-"Designed and implemented workflow enhancements, approval logic, role-based access control, request tracking features, dashboard functionality, and system improvements. Collaborated with stakeholders to analyze business requirements and optimize procurement processes.",
+Before the implementation of the PR Portal, purchase requests were created, reviewed, approved, and tracked through email communication, making visibility, tracking, and process management challenging.
 
-features: [
-  "PR request creation and submission",
+The PR Portal centralized the entire process into a single platform where employees can submit requests, upload supporting documents, monitor request progress, and manage approvals through a structured multi-level workflow.
+
+The solution includes role-based access control, automated workflow routing, email notifications, Microsoft Graph integration, attachment management through Azure Blob Storage, dashboard reporting, and external BOT/SAP integration for PR processing.
+`,
+  role:
+    "Worked on developing and enhancing the PR workflow system, including request submission, approval logic, role-based access, request tracking, dashboard features, attachment handling, and workflow improvements based on business requirements.",
+
+  features: [
+  "Purchase request submission",
   "Multi-level approval workflow",
-  "Dynamic approval routing",
+  "Conditional workflow routing based on cost center",
   "Role-based access control",
-  "Technical and budget confirmation stages",
-  "Procurement and final review process",
+  "Director approval, technical review, and technical confirmation",
+  "Budget confirmation and procurement processing",
+  "Final decision workflow",
   "Request tracking and status monitoring",
-  "Dashboard and reporting features",
+  "Dashboard and reporting indicators",
   "Automated email notifications",
-  "Workflow configuration enhancements"
+  "Attachment upload and storage",
+  "External BOT for PR processing"
+],
+
+impact: [
+  "Replaced a manual email-based procurement process.",
+  "Centralized procurement requests in a single platform.",
+  "Improved approval visibility and request tracking.",
+  "Automated workflow notifications and routing.",
+  "Enhanced operational efficiency and process transparency."
 ],
 
 tech: [
@@ -389,15 +421,62 @@ tech: [
   "SQL Server",
   "JavaScript",
   "Bootstrap",
-  "Azure DevOps",
-  "Power Automate"
+  "Microsoft Graph",
+  "Azure Blob Storage",
+  "Azure Entra ID",
+  "Azure DevOps"
 ],
-  tech: ["ASP.NET MVC", "SQL Server", "JavaScript", "Bootstrap", "Power Automate"],
+
   images: [
     "images/pr1.jpeg",
     "images/pr2.jpeg",
     "images/pr3.jpeg",
     "images/pr4.jpeg"
+  ]
+},flynas: {
+  type: "UI/UX Prototype & Workflow Planning",
+
+  title: "Flynas Digitization Prototype",
+
+  description:
+    "A UI/UX and workflow planning project focused on visualizing how operational airline forms and manual procedures could be transformed into a digital process. The project was created as a prototype and process flow plan before the development phase.",
+
+  role:
+    "Designed the initial Figma prototype, planned the user journey, structured the form flow, and mapped how users would move through the digitized process. The work focused on UI/UX design, workflow planning, and presenting the future digital experience before coding or system implementation started.",
+
+  features: [
+    "Figma prototype design",
+    "User journey planning",
+    "Operational form flow mapping",
+    "Screen structure and layout planning",
+    "Workflow step planning",
+    "Digital process visualization",
+    "Responsive interface concept",
+    "User-focused experience planning"
+  ],
+
+  impact: [
+    "Visualized the future digital process before development.",
+    "Helped clarify how manual operational forms could be digitized.",
+    "Supported early-stage planning for a digital transformation initiative.",
+    "Provided a clear prototype for discussion with stakeholders.",
+    "Improved understanding of the required user flow and screen structure."
+  ],
+
+  tech: [
+    "Figma",
+    "UI/UX Design",
+    "Wireframing",
+    "Prototyping",
+    "User Flow Design",
+    "Workflow Planning"
+  ],
+
+  images: [
+    "images/flynas1.png",
+    "images/flynas2.png",
+    "images/flynas3.png",
+    "images/flynas4.png"
   ]
 }
 };
@@ -432,6 +511,17 @@ project.features.forEach((feature) => {
   li.textContent = feature;
   featuresList.appendChild(li);
 });
+
+const impactList = document.getElementById("galleryImpact");
+impactList.innerHTML = "";
+
+if (project.impact) {
+  project.impact.forEach((impact) => {
+    const li = document.createElement("li");
+    li.textContent = impact;
+    impactList.appendChild(li);
+  });
+}
 
 const techBox = document.getElementById("galleryTech");
 techBox.innerHTML = "";
