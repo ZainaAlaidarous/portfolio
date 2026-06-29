@@ -428,10 +428,11 @@ tech: [
 ],
 
   images: [
-    "images/pr1.jpeg",
-    "images/pr2.jpeg",
-    "images/pr3.jpeg",
-    "images/pr4.jpeg"
+    "images/pr1.png",
+    "images/pr2.png",
+    "images/pr3.png",
+    "images/pr4.png",
+    "images/pr5.png"
   ]
 },flynas: {
   type: "UI/UX Prototype & Workflow Planning",
