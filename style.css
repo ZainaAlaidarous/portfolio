@@ -1873,3 +1873,6 @@ body {
     padding-bottom: 70px;
   }
 }
+
+/* Make sure elements toggled with the hidden attribute really disappear */
+[hidden] { display: none !important; }

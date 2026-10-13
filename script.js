@@ -132,19 +132,29 @@ function initPortfolio() {
   });
 
   const galleryData = {
-    chauffeur: {
+    guestportal: {
       type: "Enterprise Guest Service Platform",
 
-      title: "Chauffeur / Guest Portal",
+      title: "Guest Transportation Request Portal",
 
       description:
-        "An enterprise web application developed to digitize and manage guest chauffeur service requests. The portal supports the full request lifecycle, allowing authorized users to create, review, approve, track, and manage chauffeur requests through structured role-based workflows.",
+        "An enterprise web application that digitizes how guest transportation requests are submitted, approved, and fulfilled. It replaced manual coordination with one portal that takes every request through its full lifecycle (creation, review, approval, assignment, and completion) with a dedicated workflow for each operational role.",
 
       role:
-        "Worked on the full-stack development of the portal and delivered the first functional version within three weeks. Contributed to request workflows, role-based access, authentication, automated notifications and reminders, security enhancements, testing, and deployment readiness.",
+        "Full-stack developer. Built the first functional version within three months: designed the request workflow and status model, built the backend APIs and database layer, implemented SSO and role-based access, and added automated email notifications with scheduled reminders. Also handled security remediation, testing, and deployment readiness.",
+
+      approach: [
+        "Mapped the manual request process into a clear status model and approval path for each operational role.",
+        "Built the backend with Node.js and Express as REST APIs, with role-based authorization enforced on every endpoint.",
+        "Designed the database on Azure SQL to store requests, guest details, status history, and audit records.",
+        "Integrated Microsoft Entra ID single sign-on so employees log in with their existing corporate accounts.",
+        "Built a responsive Bootstrap front end with role-specific screens and request status tracking.",
+        "Automated email notifications, plus scheduled reminders 24 hours and 8 hours before each trip.",
+        "Fixed security findings, tested the full request lifecycle, and prepared the app for deployment on Azure."
+      ],
 
       features: [
-        "Full chauffeur request lifecycle",
+        "End-to-end request lifecycle",
         "Role-based access control",
         "Microsoft Entra ID / SSO authentication",
         "Automated email notifications",
@@ -157,7 +167,7 @@ function initPortfolio() {
       ],
 
       impact: [
-        "Digitized guest chauffeur request management",
+        "Digitized guest transportation request management",
         "Centralized operational workflows",
         "Improved request visibility and tracking",
         "Automated service notifications and reminders",
@@ -168,12 +178,14 @@ function initPortfolio() {
         "Node.js",
         "Express.js",
         "JavaScript",
-        "SQL Server",
+        "Bootstrap",
+        "Azure SQL",
         "Microsoft Entra ID",
-        "REST APIs",
         "Azure",
         "Git / GitHub"
       ],
+
+      imageNote: "Screenshots are not shown to protect client confidentiality.",
 
       images: []
     },
@@ -184,14 +196,14 @@ function initPortfolio() {
       title: "Crew Transportation System",
 
       description:
-        "An enterprise transportation management system developed to digitize bus registration and approval processes across multiple operational roles. The solution provides a structured workflow between SAAS, SGS, and airline users while supporting centralized data management and request processing.",
+        "An enterprise transportation management system developed to digitize bus registration and approval processes across multiple organizations and operational roles. Each request passes through a three-level approval chain involving partner organizations and airline users, with all data and requests managed in one central system.",
 
       role:
         "Worked primarily on backend development, building REST APIs, database operations, workflow logic, and multi-level approval functionality. Contributed to system completion, testing, security remediation, and database integration.",
 
       features: [
         "Multi-level approval workflow",
-        "SAAS → SGS → Airline workflow",
+        "Three-level approval chain across partner organizations",
         "Bus registration management",
         "Role-based access",
         "Backend REST APIs",
@@ -206,7 +218,7 @@ function initPortfolio() {
         "Digitized transportation registration workflows",
         "Centralized transportation request management",
         "Improved workflow visibility",
-        "Supported structured approvals across multiple operational roles",
+        "Supported structured approvals across multiple organizations",
         "Reduced reliance on manual processing"
       ],
 
@@ -220,6 +232,8 @@ function initPortfolio() {
         "Git / GitHub"
       ],
 
+      imageNote: "Screenshots are not shown to protect client confidentiality.",
+
       images: []
     },
 
@@ -229,10 +243,10 @@ function initPortfolio() {
       title: "Procurement Request (PR) Portal",
 
       description:
-        "An enterprise procurement platform developed to transform a manual email-based purchase request process into a centralized digital workflow. The portal allows users to submit requests, upload supporting documents, track request progress, and manage approvals through a structured multi-stage process.",
+        "An enterprise procurement platform that replaced a manual process where purchase requests were passed from person to person by email. All requests now live in one central system where users submit requests, upload supporting documents, track progress, and move through a structured multi-stage approval process. Once approvals are complete, the request is handed off automatically to an integrated automation bot that completes the procurement processing.",
 
       role:
-        "Led the end-to-end development of the PR Portal, including request submission, workflow logic, multi-stage approvals, role-based access, request tracking, Excel automation, attachment handling, notifications, database operations, testing, and continuous improvements based on business requirements.",
+        "Built the entire system end to end: request submission, workflow logic, multi-stage and conditional approvals, role-based access, request tracking, attachment handling, email notifications, database design, the automation bot integration, testing, and continuous improvements based on business requirements.",
 
       features: [
         "Purchase request submission",
@@ -240,19 +254,18 @@ function initPortfolio() {
         "Conditional workflow routing",
         "Role-based access control",
         "Request status tracking",
-        "Excel import/export automation",
         "Automated email notifications",
         "Attachment management",
         "Dashboard and reporting indicators",
-        "Procurement processing workflow"
+        "Automation bot integration for final processing"
       ],
 
       impact: [
-        "Replaced a manual email-based procurement process",
-        "Centralized purchase requests",
+        "Replaced manual person-to-person email approvals",
+        "Centralized all purchase requests in one system",
         "Improved approval visibility and tracking",
-        "Reduced repetitive manual data entry",
-        "Automated workflow routing and notifications"
+        "Automated workflow routing and notifications",
+        "Connected approvals directly to automated procurement processing"
       ],
 
       tech: [
@@ -277,32 +290,35 @@ function initPortfolio() {
     },
 
     timekeeper: {
-      type: "Attendance Digitization System",
+      type: "Attendance System Enhancement",
 
       title: "Timekeeper Portal",
 
       description:
-        "An internal web application developed to replace manual Excel-based attendance processes with a structured digital workflow. The system supports attendance submission, Excel processing, automated file generation, and integration with existing operational processes.",
+        "An existing internal attendance system used to submit and manage daily attendance records. My work focused on improving its user experience and adding a new Excel upload feature: users attach an Excel file, the system reads it, and the attendance data is uploaded automatically instead of being entered manually record by record.",
 
       role:
-        "Contributed to attendance workflows, Excel processing functionality, database operations, validation logic, user interface improvements, testing, troubleshooting, and continuous system enhancements.",
+        "Enhanced the UI/UX of the existing portal and built the new Excel upload feature end to end: attaching the file, reading and parsing its contents, and uploading the attendance data into the system.",
+
+      approach: [
+        "Reviewed the existing screens and improved their layout, structure, and ease of use.",
+        "Added an option to attach an Excel file directly from the attendance form.",
+        "Read and parsed the uploaded Excel file on the server using C# and ClosedXML.",
+        "Mapped the file's rows to attendance records and uploaded them into the system's database."
+      ],
 
       features: [
-        "Digital attendance submission",
-        "Excel upload and validation",
-        "Automated Excel file generation",
-        "Attendance record management",
-        "Database logging and tracking",
-        "Authentication and access control",
-        "Automation workflow support",
-        "Responsive user interface"
+        "Excel file attachment",
+        "Automatic reading of Excel attendance data",
+        "Bulk upload of attendance records",
+        "Improved form layouts and usability",
+        "Cleaner, more consistent interface"
       ],
 
       impact: [
-        "Reduced manual Excel processing",
-        "Improved attendance data accuracy",
-        "Automated repetitive processing",
-        "Improved attendance workflow efficiency"
+        "Replaced manual, record-by-record data entry with a single file upload",
+        "Faster attendance submission",
+        "Improved overall user experience"
       ],
 
       tech: [
@@ -311,8 +327,6 @@ function initPortfolio() {
         "SQL Server",
         "Entity Framework Core",
         "ClosedXML",
-        "Microsoft Graph",
-        "Microsoft Entra ID",
         "Bootstrap",
         "JavaScript"
       ],
@@ -326,30 +340,28 @@ function initPortfolio() {
     },
 
     fis: {
-      type: "Enterprise System Enhancement",
+      type: "UI/UX Modernization",
 
       title: "Flight Information System (FIS)",
 
       description:
-        "Contributed to enhancing an existing Flight Information System by improving user interfaces, usability, and operational screens based on business requirements.",
+        "An existing flight information system used by operations teams. The work focused on modernizing its legacy screens, converting older interfaces into clean, consistent, and well-structured pages that are easier to read and use.",
 
       role:
-        "Worked on improving and modernizing existing interfaces, refining layouts and navigation, enhancing usability, and supporting system improvement activities based on operational requirements and user feedback.",
+        "Redesigned and rebuilt legacy screens into modern layouts with consistent formatting, clearer navigation, and better readability, improving the overall user experience across the system's operational screens.",
 
       features: [
-        "User interface enhancements",
-        "Operational screen improvements",
-        "Layout optimization",
+        "Legacy screen modernization",
+        "Consistent layout and formatting",
         "Navigation improvements",
-        "Usability enhancements",
+        "Improved readability of operational data",
         "User-focused design improvements"
       ],
 
       impact: [
         "Improved overall user experience",
-        "Enhanced usability of operational screens",
-        "Provided cleaner and more intuitive interfaces",
-        "Supported ongoing system improvement initiatives"
+        "Unified the look and feel across screens",
+        "Made operational screens easier to read and use"
       ],
 
       tech: [
@@ -380,24 +392,32 @@ function initPortfolio() {
       ]
     },
 
-    filetrip: {
+    digitalproto: {
       type: "UI/UX Prototype & Workflow Planning",
 
-      title: "FileTrip Digitization Prototype",
+      title: "Operational Workflow Digitization Prototype",
 
       description:
-        "A planning and UI/UX prototyping initiative created to visualize a proposed digital workflow before development. The work focused on understanding the process, organizing the user journey, planning screen structures, and presenting the future digital experience through an interactive prototype.",
+        "An early-stage digitization initiative for an aviation client, aimed at turning a paper-based operational process into a digital workflow. Before any development started, the work focused on understanding the current process, defining the future user journey, and presenting the proposed digital experience as an interactive prototype.",
 
       role:
-        "Contributed to the initial planning of the project and developed the UI/UX prototype. Worked on user-flow planning, screen structure, workflow visualization, and prototyping before the development phase.",
+        "Took part in the initial project planning and independently designed the full UI/UX prototype. Responsible for translating the process into user flows and screen structures, then designing the interactive prototype used to review the proposed solution with stakeholders before development.",
+
+      approach: [
+        "Reviewed the current manual process to identify its steps, users, documents, and pain points.",
+        "Mapped the future digital workflow and user journey for each user type.",
+        "Defined the information architecture and screen structure for each step.",
+        "Built low-fidelity wireframes to validate the flow early.",
+        "Designed high-fidelity screens and linked them into a clickable Figma prototype.",
+        "Presented the prototype in stakeholder discussions to clarify requirements before development."
+      ],
 
       features: [
-        "UI/UX prototype",
+        "Interactive UI/UX prototype",
         "User journey planning",
         "Workflow mapping",
         "Screen structure planning",
         "Digital process visualization",
-        "Interactive prototype",
         "Early-stage requirements understanding"
       ],
 
@@ -417,10 +437,10 @@ function initPortfolio() {
         "Workflow Planning"
       ],
 
-      // No screenshots are available for this project yet — it was an early-stage
-      // planning/prototype effort. The gallery UI hides the image area and image
-      // navigation controls whenever `images` is empty (see the gallery-btn handler
-      // below), so this intentionally renders without broken image paths.
+      // No screenshots are shown for this project (client confidentiality /
+      // early-stage work). The gallery hides the image area when `images` is empty.
+      imageNote: "Screenshots are not shown to protect client confidentiality.",
+
       images: []
     },
 
@@ -576,6 +596,20 @@ function initPortfolio() {
       galleryDescription.textContent = project.description;
   document.getElementById("galleryRole").textContent = project.role;
 
+  const approachBox = document.getElementById("galleryApproachBox");
+  const approachList = document.getElementById("galleryApproach");
+  approachList.innerHTML = "";
+  if (project.approach && project.approach.length) {
+    project.approach.forEach((step) => {
+      const li = document.createElement("li");
+      li.textContent = step;
+      approachList.appendChild(li);
+    });
+    approachBox.hidden = false;
+  } else {
+    approachBox.hidden = true;
+  }
+
   const featuresList = document.getElementById("galleryFeatures");
   featuresList.innerHTML = "";
 
@@ -615,6 +649,7 @@ function initPortfolio() {
       } else {
         galleryImage.hidden = true;
         galleryImage.src = "";
+        galleryNoImages.textContent = project.imageNote || "Project screenshots will be added soon.";
         galleryNoImages.hidden = false;
         galleryControls.hidden = true;
       }
